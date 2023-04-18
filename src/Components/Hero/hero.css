@@ -1,0 +1,292 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.7rem;
+}
+.hero-left{
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    padding: 2rem;
+    padding-top: 1.5rem;
+    gap: 2rem;
+
+}
+.hero-right{
+    flex:1;
+    position: relative;
+    background-color: #d4572a;
+    
+}
+.title-add{
+    margin-top: 3rem;
+    background-color: rgb(29, 30, 30);
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 15px;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.title-add>sTRONG{
+    z-index: 2;
+}
+.title-add>div{
+    position: absolute;
+    background-color: rgb(188, 216, 96);
+    width: 5rem;
+    height: 85%;
+    left: 8px;
+    border-radius: 3.5rem;
+}
+.gym-guy-title{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5;
+    font-size: 3.8rem;
+    font-weight: bold;
+    text-overflow: inherit;
+    color: white;
+}
+.gym-guy-title>div:nth-child(3){
+    margin-top: 15px;
+width: 80%;
+font-size: 1.2rem;
+font-weight: bold;
+text-transform: none;
+letter-spacing: 1px;
+color: black;
+
+}
+
+.club-information{
+    display: flex;
+    gap: 2rem;
+}
+.club-information>div{
+    display: flex;
+    flex-direction: column;
+}
+.club-information>div>span:nth-of-type(1){
+    font-size: 2rem;
+    color:green;
+}
+.club-information>div>span:nth-of-type(2){
+    color:black;
+    
+}
+
+.gym-left-btn{
+    /* padding: 0.8rem; */
+    display: flex;
+    gap: 2rem;
+    font-weight: normal;
+    /* font-size: 1vmax; */
+    
+}
+.gym-left-btn>:nth-child(1){
+    background-color:rgb(218, 167, 39);
+    width: 8rem;
+    /* height: 5rem; */
+    /* font-size: 0.8vmax; */
+    /* height: 4rem; */
+}
+.gym-left-btn>:nth-child(1):hover{
+    background-color:green;
+    color: aliceblue;
+}
+
+.gym-left-btn>:nth-child(2){
+    /* background-color:goldenrod; */
+    color: transparent;
+    color: black;
+    width: 8rem;
+    /* height: 5rem; */
+    /* font-size: 0.8vmax; */
+    /* height: 4rem; */
+}
+.gym-left-btn>:nth-child(2):hover{
+    background-color:green;
+    color: aliceblue;
+}
+
+/* right side */
+.hero-right>.btn{
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    color: black; 
+}
+.hero-right>.btn:hover{
+    background-color: green;
+    color: white;
+}
+
+.heart-rate{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color:rgb(146, 138, 138);
+    width: fit-content;
+    padding: 1rem;
+    align-items: flex-start;
+    border-radius: 5px;
+    position: absolute;
+    top: 7rem;
+    right: 4rem;
+}
+.heart-rate>img{
+    width: 2.5rem;
+    
+}
+.heart-rate>:nth-child(2){
+    color: rgb(208, 201, 201);
+    font-weight: bold;
+}
+.heart-rate>:nth-child(3){
+    color:white;
+    font-size: 1.5rem;
+}
+
+.hero-img{
+    position: absolute;
+    top: 10rem;
+    right: 8rem;
+    width: 23rem;
+}
+.hero-back{
+    position: absolute;
+    top: 6rem;
+    right: 17rem;
+    z-index: -1;
+    width: 16rem;
+}
+.calory{
+    display: flex;
+    gap: 2rem;
+    background-color: rgb(237, 229, 226);
+    border-radius: 5px;
+    padding: 1rem;
+    width: fit-content;
+    position: absolute;
+    top: 34rem;
+    right: 28rem;
+}
+
+.calory>img{
+    width: 5rem;
+}
+.calory>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.calory>div>:nth-child(1){
+    color: darkslategrey;
+}
+.calory>div>:nth-child(2){
+    color: black;
+    font-size: 1.5rem;
+}
+
+
+/* responsive */
+  @media screen and (max-width:768px){
+    .hero{
+       flex-direction: column;
+    }
+    .title-add{
+        margin-top:0 ;
+        font-size: 1rem;
+        align-self: center;
+        transform: scale(1);
+    }
+    .gym-guy-title{
+        /* font-size: 2.5rem; */
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .gym-guy-title>div:nth-child(3){
+        font-size: small;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .club-information>div>span:nth-of-type(1){
+font-size: large;
+    }
+    .club-information>div>span:nth-of-type(2){
+        font-size: small;
+    }
+    .gym-left-btn{
+        justify-content: center;
+        /* font-size: 3rem; */
+    }
+    .hero-right{
+        position: relative;
+        background: none;
+    }
+    .heart-rate{
+        left: 1rem;
+        top: 2rem;
+        
+    }
+    .heart-rate>img{
+        width: 1.8rem;
+        
+    }
+    .heart-rate>:nth-child(2){
+        color: rgb(219, 213, 213);
+        font-weight: bold;
+    }
+    .heart-rate>:nth-child(3){
+        color:white;
+        font-size: 1.2rem;
+    }
+    .calory{
+       position: relative;
+       top: 2rem;
+       left: 0rem; 
+       gap: 1rem;
+       background-color: rgb(233, 199, 187);
+       border-radius: 7px;
+       padding: 0.5rem;
+    }
+    .calory>img{
+        width: 4rem;
+    }
+ 
+    .calory>div>:nth-child(2){
+        color: black;
+        font-size: 1.3rem;
+    }
+    
+    .hero-img{
+        position: relative;
+        width: 17rem;
+        left: 6.8rem;
+        top: 4rem;
+        align-self: center;
+    }
+    .hero-back{
+        width: 16rem;
+        left: 1rem;
+        top: 0rem;
+    }
+ 
+    .hero-right>.btn{
+       
+        right: 1rem;
+    }
+  
+    
+ 
+
+
+     
+
+  }

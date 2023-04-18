@@ -1,0 +1,131 @@
+.testimonials{
+    display: flex;
+    margin-top: 6rem;
+    padding: 0 2rem;
+    gap: 1rem;
+
+}
+.stroke-text{
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color:rgb(78, 73, 77);
+  border-radius: 2rem;
+  font-weight: bold;
+}
+.testi-left{
+display: flex;
+flex: 1 1;
+flex-direction: column;
+gap: 1.5rem;
+color: rgb(251, 251, 251);
+}
+.testi-left>:nth-child(1){
+    font-size: 1.5rem;
+    color: rgb(252, 137, 6);
+    font-weight: bold;
+}
+.testi-left>:nth-child(2),
+.testi-left>:nth-child(3){
+    
+    font-weight: bold;
+    font-size: 3rem;
+}
+.name-coach{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(65, 68, 68);
+}
+.testi-left>:nth-child(4){
+    text-align: justify;
+    letter-spacing: 1.8px;
+    line-height: 40px;
+    font-size: 1.4rem;
+}
+
+.testi-right{
+    display: flex;
+    flex: 1 ;
+    position: relative;
+}
+.testi-right>img{
+    position: absolute;
+    width: 20rem;
+    height: 22rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+}
+.testi-right>:nth-child(1){
+    position: absolute;
+    width: 19rem;
+    height: 22rem;
+    border: 4px solid orangered;
+    background-color: transparent;
+    right: 10.5rem;
+    top: 0.7rem;
+}
+.testi-right>div:nth-child(2){
+    position: absolute;
+    width: 19rem;
+    height: 22rem;
+    right: 6.5rem;
+    top:3.5rem;
+    background: rgb(139, 139, 97);
+}
+ .arrow{
+    display: flex;
+    gap: 1.5rem;
+    position: absolute;
+    bottom: -1rem;
+    left: 12rem;
+ }
+.arrow>img{
+    
+    cursor: pointer;
+    
+    width: 3rem;
+}
+.arrow>img:hover{
+    transform: scale(1.1);
+  
+}
+
+/* responsive */
+@media screen and (max-width:768px){
+    .testimonials{
+        flex-direction: column;
+    }
+    .testi-left>:nth-child(2),
+.testi-left>:nth-child(3){
+font-size: xx-large;
+}
+.testi-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2 rem;
+}
+.testi-right>div{
+    position: relative;
+    display: none;
+}
+.testi-right>img{
+    top: 0rem;
+    right: 0rem;
+    position: relative;
+    align-self: center;
+}
+.testi-right>:last-child{
+    display: block;
+    top:1rem ;
+    left: 0;
+}
+.testi-left>:nth-child(4){
+    text-align: justify;
+    letter-spacing: 1.5px;
+    line-height: 37px;
+    font-size: 1rem;
+}
+
+}
